@@ -88,8 +88,4 @@ To get up and running with the Little Lemon Restaurant API, follow these steps:
 
 
 
-If you have any questions or would like to provide feedback, please contact me at [your.email@example.com](mailto:your.email@example.com).
-
----
-
-Feel free to modify any sections as needed!
+If you have any questions or would like to provide feedback, please contact me at [samiamjidkhan@gmail.com](samiamjidkhan@gmail.com).
