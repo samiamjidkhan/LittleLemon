@@ -1,71 +1,95 @@
-# API Endpoints for Testing
+# Little Lemon Restaurant API
 
-## Menu API
-- **GET** `/restaurant/menu/`
-  - Description: Retrieve a list of all menu items.
-  - Example Request: `GET http://127.0.0.1:8000/restaurant/menu/`
-  - Example Response: 200 OK, List of menu items in JSON format.
+## Overview
 
-- **POST** `/restaurant/menu/`
-  - Description: Create a new menu item.
-  - Example Request: 
-    ```json
-    {
-      "Title": "New Dish",
-      "Price": "12.99",
-      "Inventory": 50
-    }
-    ```
-  - Example Response: 201 Created, Details of the newly created menu item.
+Welcome to my Little Lemon Restaurant API project! This repository represents the final capstone project for the Meta Back-End Developer Professional Certificate. Throughout this project, I've built a RESTful API using Django and the Django REST Framework to manage restaurant functionalities like menu management and table bookings. It’s been an exciting journey demonstrating my skills in back-end development and solving real-world problems.
 
-- **PUT** `/restaurant/menu/<id>/`
-  - Description: Update an existing menu item.
-  - Example Request: 
-    ```json
-    {
-      "Title": "Updated Dish",
-      "Price": "15.99",
-      "Inventory": 40
-    }
-    ```
-  - Example Response: 200 OK, Details of the updated menu item.
+## Course Syllabus
 
-- **DELETE** `/restaurant/menu/<id>/`
-  - Description: Delete a menu item by ID.
-  - Example Request: `DELETE http://127.0.0.1:8000/restaurant/menu/<id>/`
-  - Example Response: 204 No Content, Item deleted successfully.
+Here's a brief overview of how I tackled this project through the course modules:
 
-## Booking API
-- **GET** `/restaurant/tables/`
-  - Description: Retrieve a list of all table bookings.
-  - Example Request: `GET http://127.0.0.1:8000/restaurant/tables/`
-  - Example Response: 200 OK, List of table bookings in JSON format.
+### Module 1: Starting the Project
 
-- **POST** `/restaurant/tables/`
-  - Description: Create a new table booking.
-  - Example Request: 
-    ```json
-    {
-      "Name": "John Doe",
-      "No_of_guests": 4,
-      "BookingDate": "2024-09-10T18:00:00Z"
-    }
-    ```
-  - Example Response: 201 Created, Details of the newly created table booking.
+- **Setup:** I began by setting up my development environment and getting acquainted with Django.
+- **Goals:**
+  - Built a back-end application using Django.
+  - Served static HTML content.
+  - Committed the project to a Git repository.
 
-- **PUT** `/restaurant/tables/<id>/`
-  - Description: Update an existing table booking.
-  - Example Request: 
-    ```json
-    {
-      "Name": "Jane Doe",
-      "No_of_guests": 5,
-      "BookingDate": "2024-09-11T19:00:00Z"
-    }
-    ```
-  - Example Response: 200 OK, Details of the updated table booking.
+### Module 2: Project Functionality
 
-- **DELETE** `/restaurant/tables/<id>/`
-  - Description: Delete a table booking by ID.
-  - Example Request: `DELETE http://127.0.0.1:8000/restaurant/tables/<id>/`
-  - Example Response: 204 No Content, Booking deleted successfully.
+- **Database Models:** I connected to MySQL and created the necessary models for the application.
+- **APIs:** I developed and implemented APIs for managing menus and booking tables using Django REST Framework.
+
+### Module 3: Security and Testing
+
+- **Authentication:** Added user registration, login, and logout functionalities to secure the application.
+- **Security:** Implemented measures to protect the table booking API and ensure data integrity.
+- **Testing:** Conducted unit tests and tested API endpoints with the Insomnia REST client.
+- **GitHub:** Pushed all my code commits to GitHub.
+
+### Module 4: Graded Assessment
+
+- **Assessment:** I compared my code and design with my peers, tackled some of the most challenging parts of the project, and completed a graded assessment.
+
+## Getting Started
+
+To get up and running with the Little Lemon Restaurant API, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/samiamjidkhan/LittleLemon.git
+   ```
+
+2. **Navigate to Project Directory:**
+   ```bash
+   cd little-lemon-restaurant-api
+   ```
+
+3. **Create a Virtual Environment:**
+   ```bash
+   python -m venv venv
+   ```
+
+4. **Activate the Virtual Environment:**
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+5. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. **Apply Migrations:**
+   ```bash
+   python manage.py migrate
+   ```
+
+7. **Run the Development Server:**
+   ```bash
+   python manage.py runserver
+   ```
+
+8. **Access the API:**
+   - Visit `http://127.0.0.1:8000/api/` to interact with the API.
+
+## Features
+
+- **Menu Management:** Endpoints to manage restaurant menus.
+- **Table Booking:** Endpoints to book tables.
+- **User Authentication:** Includes registration, login, and logout functionalities.
+- **Testing:** Includes unit tests and Insomnia API endpoint tests.
+
+
+
+If you have any questions or would like to provide feedback, please contact me at [your.email@example.com](mailto:your.email@example.com).
+
+---
+
+Feel free to modify any sections as needed!
